@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script type="module" src="js/register.js" defer></script>
+    <script type="module" src="js/login.js" defer></script>
+    <title>AIU ECOMMERCE</title>
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <section class="login" id="login-section">
+        <div class="login__container">
+            <div class="login__header">
+                <h1>ECOMMERCE</h1>
+                <p>AIU</p>
+                <h2>Login</h2>
+                <div class="login-input">
+                    <label for="email">Username</label>
+                    <input type="email" id="email" placeholder="userlogin" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="userpassword" required>
+                </div>
+                <button class="btn btn--primary" id="login">Login</button>
+                <button class="btn btn--secondary" id="register">Register</button>
+                <hr>
+                <p>Login with</p>
+                <div class="col d-flex">
+                    <span><i class="bx bxl-facebook-square"></i></span>
+                    <span><i class="bx bxl-google"></i></span>
+                    <span><i class="bx bxl-apple"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="identifier hidden" id="identifier-section">
+        <div class="identifier">
+            <h2>Select Role</h2>
+            <a href="#" id="customer">Customer</a>
+            <a href="#" id="seller">Seller</a>
+        </div>
+    </section>
+
+    <section class="register__header hidden" id="register-section">
+        <div class="register-input">
+            <h2>Register</h2>
+            <label for="reg-username">Username</label>
+            <input type="text" id="reg-username" placeholder="username" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email" required>
+            <label for="reg-password">Confirm Password</label>
+            <input type="password" id="reg-password" placeholder="password" required>
+            <!-- <label for="number">Number</label>
+            <input type="number" id="number" placeholder="number" required> -->
+            <button class="btn btn--secondary" id="signUp">Register</button>
+            <button class="btn btn--primary" id="login">Login</button>
+        </div>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
